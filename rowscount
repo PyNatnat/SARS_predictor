@@ -1,0 +1,15 @@
+# Contagem de instâncias
+
+import pandas as pd
+
+# Leia o arquivo CSV
+data = pd.read_csv(r"C:\Users\natha\Downloads\ProjetoAM\CSV Brasil bruto\Brasil.csv")
+
+# SG_UF_NOT = 15 (PARÁ)
+# df_filtered = df[df['SG_UF_NOT'].isin([15, 11, 12, 13, 14, 16, 17])] # Região Norte
+
+# Conte o número de linhas
+num_rows = data.shape[0]
+
+# Exiba o número de linhas
+print(f'O número de linhas é: {num_rows}')
